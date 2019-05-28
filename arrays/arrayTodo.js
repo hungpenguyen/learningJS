@@ -15,7 +15,7 @@ const todos = [{
   completed: false
 }];
 
-//go through array and delete object that are completed that are completed
+//go through array and delete object.
 
 const deleteTodo = (todos, todoText)=>{
   const index = todos.findIndex((todo)=>{
