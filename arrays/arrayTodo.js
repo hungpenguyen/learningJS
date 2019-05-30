@@ -28,3 +28,12 @@ const deleteTodo = (todos, todoText)=>{
 
 deleteTodo(todos, 'throw trash');
 console.log(todos);
+
+//show only the ones that are false/incompleted
+const notCompleted = (todosList, completion)=>{
+  return todosList.filter((item, index)=>{
+    return item.completed === false
+  })
+}
+
+console.log(notCompleted(todos));
